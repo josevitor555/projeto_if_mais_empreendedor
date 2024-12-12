@@ -7,14 +7,9 @@
   font-family: "Roboto", serif;
 }
 
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.parent {
+  max-width: var(--card-width);
 
-div i {
-  font-size: 1.2rem;
 }
 
 body {
