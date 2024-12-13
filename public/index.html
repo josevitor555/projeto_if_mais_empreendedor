@@ -15,9 +15,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
+  <!-- Animações CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <title> Projeto IF Mais Empreendedor </title>
 </head>
 <body>
+
+  <id id="progressbar"></id>
 
   <header>
     <nav class="nav-menu flex w-full items-center bg-background-primary lg:min-h-18 lg:px-[5%]">
@@ -61,9 +66,9 @@
   </header>
 
   <section class="main-home grid grid-cols-1 items-center gap-y-16 overflow-hidden pt-16 sm:overflow-auto md:pt-24 lg:grid-cols-[50%_50%] lg:gap-y-0 lg:pt-0">
-    <div class="headline mx-[5%] custom-max-width justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-start">
+    <div class="headline animate__animated animate__flash mx-[5%] custom-max-width justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-start">
       <h1 class="mb-5 text-4xl font-bold md:mb-6 md:text-6xl lg:text-6xl"> Cruz: MyFood </h1>
-      <p class="md:text-2xl text-2xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste ducimus placeat deserunt fugit sequi! Beatae nobis facere ex eius impedit. At sunt quidem placeat ex tempora sequi rerum explicabo! </p>
+      <p class="md:text-3xl text-3xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste ducimus placeat deserunt fugit sequi! Beatae nobis facere ex eius impedit. At sunt quidem placeat ex tempora sequi rerum explicabo! </p>
       
       <div class="mt-6 flex gap-x-4 md:mt-8">
         <button class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-black bg-black text-white text-2xl px-6 py-3" title="Botão 3"> Botão 3 </button>
@@ -95,12 +100,104 @@
       </div>
     </div>
 
-    <div class="img-cover">
-      <img src="./images/person-ordering-food-or-drink-at-a-counter__1_-removebg-preview.png" alt="Image cover">
+    <div class="custom-slide-container relative clear-both h-[300px] max-h-[60rem] min-h-screen w-full bg-[#ffffff] text-center">
+      <div class="relative left-0 right-0 z-10 block h-full overflow-hidden whitespace-nowrap pl-4" role="region" aria-roledescription="carousel">
+        <div>
+          <div class="flex -ml-4">
+            <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-0">
+              <div class="relative inline-block size-full whitespace-normal text-left align-top">
+                <div class="flex h-screen flex-col">
+                  <div class="relative flex-1">
+                    <img class="absolute size-full object-cover" src="./images/O melhor hambúrguer da cidade.png" alt="Image not found"/>
+                  </div>
+                  <div class="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                    <div class="w-full min-w-lg">
+                      <h6 class="mb-1 text-4xl font-bold leading-[1.4] md:text-4xl">
+                        Aproveite nossos salgados!
+                      </h6>
+                      <p class="text-2xl"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quasi nulla nisi dolor quis tempore voluptates asperiores explicabo suscipit perferendis qui facere quidem commodi adipisci quia, pariatur maiores nam harum? </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-0">
+              <div class="relative inline-block size-full whitespace-normal text-left align-top">
+                <div class="flex h-screen flex-col">
+                  <div class="relative flex-1">
+                    <img class="absolute size-full object-cover" src="./images/O melhor bolo da cidade.png" alt="Image not found"/>
+                  </div>
+                  <div class="relative bg-background-secondary px-6 pb-32 pt-6 sm:px-8 sm:pt-8">
+                    <div class="w-full min-w-lg">
+                      <h6 class="mb-1 text-4xl font-bold leading-[1.4] md:text-4xl">
+                        Aproveite nossos bolos!
+                      </h6>
+                      <p class="text-2xl"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quasi nulla nisi dolor quis tempore voluptates asperiores explicabo suscipit perferendis qui facere quidem commodi adipisci quia, pariatur maiores nam harum? </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pl-4">
+          <div class="absolute bottom-[52px] left-8 right-auto top-auto flex w-full items-start justify-start">
+            <button class="mx-[3px] inline-block size-2 rounded-full bg-black"></button>
+            <button class="mx-[3px] inline-block size-2 rounded-full bg-black"></button>
+            <button class="mx-[3px] inline-block size-2 rounded-full bg-black"></button>
+          </div>
+
+          <button aria-label="Previous slide" class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary absolute rounded-full -translate-y-1/2 bottom-2 left-auto right-[5.5rem] top-auto size-12 bg-transparent md:right-24">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="size-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
+            </svg>
+            <span class="sr-only"> Previous slide </span>
+          </button>
+
+          <button aria-label="Next slide" class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary absolute rounded-full -translate-y-1/2 bottom-2 left-auto right-8 top-auto size-12 bg-transparent">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="size-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg>
+            <span class="sr-only"> Next slide </span>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <script type="module" src="./js/main.js"></script>
+  <div class="categories-items">
+    <div class="categorie">
+      <img src="./images/drinks.png" alt="Imagem não encontrada">
+
+      <h1 class="text-3xl text-gray-950 font-semibold mt-4"> Nossas Bebidas </h1>
+    </div>
+    <div class="categorie">
+      <img src="./images/doce-removebg-preview.png" alt="Imagem não encontrada">
+
+      <h1 class="text-3xl text-gray-950 font-semibold mt-4"> Nossas Doces </h1>
+    </div>
+    <div class="categorie">
+      <img src="./images/hamburger-removebg-preview.png" alt="Imagem não encontrada">
+
+      <h1 class="text-3xl text-gray-950 font-semibold mt-4"> Nossos Salgados </h1>
+    </div>
+    <div class="categorie">
+      <img src="./images/park-junk-food-fast-food.png" alt="Imagem não encontrada">
+
+      <h1 class="text-3xl text-gray-950 font-semibold mt-4"> Nossos Acompanhamentos </h1>
+    </div>
+    <div class="categorie">
+      <img src="./images/coquetel.png" alt="Imagem não encontrada">
+
+      <h1 class="text-3xl text-gray-950 font-semibold mt-4"> Nossas Sobremesas </h1>
+    </div>
+  </div>
+
+  <section class="products-section">
+
+  </section>
+
   <!-- Bundle gerado pelo Webpack -->
   <script type="module" src="../dist/bundle.js"></script>
 </body>

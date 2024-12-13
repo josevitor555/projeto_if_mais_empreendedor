@@ -5,7 +5,7 @@ import path from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const entryFiles = ['./public/js/main.js'];
+const entryFiles = ['./public/js/progressbar.js', './public/js/slide.js'];
 
 export default {
   entry: entryFiles,
