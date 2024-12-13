@@ -1,13 +1,3 @@
 :root {
   font-size: 62.5%;
-  /* Unidade PX para REM equivalem a 10px = 1rem */
-
-  --font-size-base: 1.6rem;
-  /* 16px */
-  --font-size-heading: 3rem;
-  /* 30px */
-  --font-size-subheading: 2rem;
-  /* 20px */
-  --card-width: 40rem;
-  /* 400px */
 }
